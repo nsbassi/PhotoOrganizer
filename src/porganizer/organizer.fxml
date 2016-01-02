@@ -33,13 +33,14 @@
             <TextField id="baseDir" fx:id="txtBaseDir" disable="true" GridPane.columnIndex="1" />
             <TextField id="txtSuffix" fx:id="txtSuffix" prefHeight="27.0" prefWidth="328.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <TextField id="newPicDir" fx:id="txtNewDir" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField id="txtStartNum" fx:id="txtStartNum" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <TextField id="txtStartNum" fx:id="txtStartNum" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="Starting Number" GridPane.rowIndex="3" />
             <Label text="Prefix" GridPane.rowIndex="1" />
             <Label text="Suffix" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onAction="#selectBaseDir" prefHeight="27.0" prefWidth="37.0" GridPane.columnIndex="2" />
             <Button mnemonicParsing="false" onAction="#selectNewDir" prefHeight="27.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <TextArea fx:id="txtLog" disable="true" prefHeight="20.0" prefWidth="149.0" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#getNextNumber" prefHeight="27.0" prefWidth="35.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -54,7 +55,7 @@
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin></Button>
-            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clearLog" prefHeight="27.0" prefWidth="86.0" text="Clear">
+            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clearLog" prefHeight="27.0" prefWidth="86.0" text="Clear Log">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>

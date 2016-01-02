@@ -161,6 +161,7 @@ public class Controller implements Initializable {
         }
     }
 
+    @FXML
     private void getNextNumber() {
         FilenameFilter filenameFilter = new FilenameFilter() {
             @Override
