@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox prefHeight="343.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="porganizer.Controller">
+   <children>
+      <GridPane hgap="5.0" prefHeight="277.0" prefWidth="510.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="0.0" prefWidth="140.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="295.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="9.0" prefWidth="24.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="49.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="92.0" minHeight="28.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="85.0" minHeight="26.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="93.0" minHeight="28.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="97.0" minHeight="25.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Base Directory" />
+            <Label text="New Pictures Folder" GridPane.rowIndex="4" />
+            <TextField id="txtPrefix" fx:id="txtPrefix" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <TextField id="baseDir" fx:id="txtBaseDir" disable="true" GridPane.columnIndex="1" />
+            <TextField id="txtSuffix" fx:id="txtSuffix" prefHeight="27.0" prefWidth="328.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <TextField id="newPicDir" fx:id="txtNewDir" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="txtStartNum" fx:id="txtStartNum" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Label text="Starting Number" GridPane.rowIndex="3" />
+            <Label text="Prefix" GridPane.rowIndex="1" />
+            <Label text="Suffix" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#selectBaseDir" prefHeight="27.0" prefWidth="37.0" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#selectNewDir" prefHeight="27.0" prefWidth="37.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextArea fx:id="txtLog" disable="true" prefHeight="20.0" prefWidth="149.0" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </GridPane>
+      <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="510.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#copyFiles" prefHeight="27.0" prefWidth="86.0" text="Start">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clearLog" prefHeight="27.0" prefWidth="86.0" text="Clear">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#close" text="Cancel">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>
