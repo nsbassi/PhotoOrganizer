@@ -27,8 +27,8 @@
             <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Base Directory" />
-            <Label text="New Pictures Folder" GridPane.rowIndex="4" />
+            <Label text="Destination Directory" />
+            <Label text="Source Directory" GridPane.rowIndex="4" />
             <TextField id="txtPrefix" fx:id="txtPrefix" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
             <TextField id="baseDir" fx:id="txtBaseDir" disable="true" GridPane.columnIndex="1" />
             <TextField id="txtSuffix" fx:id="txtSuffix" prefHeight="27.0" prefWidth="328.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />

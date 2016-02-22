@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="PhotoOrganizer.jar" size="8975" download="eager" />
+    <jar href="PhotoOrganizer.jar" size="8972" download="eager" />
   </resources>
   <jfx:javafx-desc  width="552" height="325" main-class="porganizer.Main"  name="JavaFXApp" />
   <update check="background"/>
