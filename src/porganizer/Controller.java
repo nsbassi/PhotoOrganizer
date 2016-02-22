@@ -199,7 +199,7 @@ public class Controller implements Initializable {
             public boolean accept(File dir, String name) {
                 String lowercaseName = name.toLowerCase();
                 for (String str : imageFileExts) {
-                    if (name.endsWith(str)) {
+                    if (name.toLowerCase().endsWith(str)) {
                         return true;
                     }
                 }
